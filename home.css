@@ -223,9 +223,28 @@ text-align: center;
    box-shadow: 0 8px 8px 0 #3C3D37, 0 6px 20px 0 #3C3D37;
    /* margin-top: 5%; */
    animation: about_main_anime 3s linear ;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%; 
-    
+   animation-timeline: view();
+   animation-range: entry 0 cover 40%; 
+   
+}
+.content_logo:hover{
+   /* background-color: rgb(20, 64, 94); */
+   background-color:rgb(38, 72, 86) ;
+   transition: ease-in 0.2s;
+   animation: card 0.2s forwards;
+   color: white;
+}
+@keyframes card {
+   from  {
+     opacity: 0;
+     transform: translatey(0);
+   
+   }
+   to{
+      opacity: 1;
+      transform: translatey(-10px);
+   }
+   
 }
 @keyframes about_main_anime {
    from  {
