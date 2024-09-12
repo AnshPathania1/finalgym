@@ -183,7 +183,8 @@ text-align: center;
 #about{
    height: 88%;
    width: 100%;
-   background-color: rgba(15, 53, 79, 0.301);
+   /* background-color: rgba(15, 53, 79, 0.301); */
+   background-color: rgba(38, 72, 86);
 }
 /* rgba(15, 53, 79, 0.301) */
 .content_header{
@@ -191,6 +192,7 @@ text-align: center;
    width: 100%;
    padding: 1%;
    text-align: center;
+   background-color: rgba(240, 248, 255, 0.76);
 }
 .content_header span{ 
  font-size: 1.5rem;
@@ -225,6 +227,7 @@ text-align: center;
    animation: about_main_anime 3s linear ;
    animation-timeline: view();
    animation-range: entry 0 cover 40%; 
+   background-color: rgba(231, 238, 245, 0.674);
    
 }
 .content_logo:hover{
