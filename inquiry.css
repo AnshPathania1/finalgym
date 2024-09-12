@@ -7,8 +7,59 @@
     height: 100%;
     width: 100%;
 }
-#inquire{
+#inquiry{
     height: 100%;
     width: 100%;
     background-color: rgb(100, 201, 147);
+}
+.content_main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgb(100, 201, 147);
+    display: flex;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    /* border: 3px solid blue; */
+   /* border-radius:  50% 50% 100% 0% / 0% 0% 100% 100%;  */
+    background-color: rgb(38, 72, 86);
+}
+.text{
+    width: 100%;
+    height: 40%;
+    padding: 4%;
+    /* border: 3px solid red; */
+}
+.text h3{
+    font-size: 4rem;
+    /* height: 50%; */
+    margin-top: 12%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    
+}
+.text p{
+    font-size: 1.2em;
+    color: white;
+    padding: 6%;
+}
+.content_img{
+    background: linear-gradient(rgba(37, 82, 101, 0.577),rgba(0, 0, 0, 0.021)), url(pic/form.png);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    
+    height: 60%;
+    /* border: 3px solid red; */
+    /* border: 3px solid rgb(205, 10, 98); */
+    overflow: hidden;
+    
+}
+.left{
+    height: 100%;
+    width: 50%;
+    background-color: #628a39;
 }
