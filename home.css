@@ -188,10 +188,27 @@ text-align: center;
 .about_main{
    height: 100%;
    width: 100%;
+   margin-top: 10%;
+   display: flex;
+   position: relative;
+   gap: 10px;
    background-color:rgba(200, 234, 245, 0.356);
 }
 
+.content_logo{
+   width: 100%;
+   height: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 3px solid red;
+   /* margin-top: 5%; */
+  
+}
 .content_logo img{
-   width: 30%;
-   height: 30%;
+   width: 45%;
+   height: 45%;
+   border: 3px solid blue;
+   object-fit: cover;
+   /* margin-left: 25%; */
 }
