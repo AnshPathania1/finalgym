@@ -89,18 +89,64 @@
     width: 50%;
     background-color: lightcyan;
     position: relative;
-    /* padding: 4%; */
+    padding: 6% 5% 2% 5%;
 }
-.form-box{
+.form-box{ 
     height: 100%;
     width: 100%;
     border: 3px solid red;
 }
 .form-box h3{
-    height: 20%;
+    height: 10%;
     width: 100%;
     border: 3px solid rgb(0, 42, 255);
    text-align: center;
    justify-self: end;
+   display: flex;
+   justify-content: center;
+   align-items: end;
+    font-size: 3rem;
    /* margin-bottom: 0%; */
+}
+.box_input{
+    height: 90%;
+    width: 100%;
+    border: 3px solid rgb(15, 236, 67);
+    padding: 3%;
+    position: relative;
+    /* display: flex; */
+    /* align-items: center;j\ */
+    /* justify-content: center; */
+   
+}
+.input_field{
+    height: 70%;
+    width: 80%;
+    /* border: 1px solid black; */
+    border-radius: 5%;
+    padding: 3%;
+    margin-left: 6%;
+    margin-top: 3%;
+    /* outline: none; */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+}
+#btn {
+    /* height: %; */
+    width: 100%;
+    /* display: flex; */
+    /* margin-left: 2%; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* padding: 2%; */
+    border: 3px solid blueviolet;
+}
+#btn input{
+    padding: 6%;
+}
+.demo_page{
+    height: 10%;
+    border: 3px solid rgb(20, 215, 193);
 }
