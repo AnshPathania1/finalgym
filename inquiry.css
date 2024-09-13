@@ -57,17 +57,35 @@
     background-position: center;
      background-size: cover;
     border-radius: 50%;
-    background-color: rgba(37, 31, 31, 0.734) ;
+    /* background-color: rgba(37, 31, 31, 0.734) ; */
+    background-color: aliceblue;
     box-shadow: 0 10px 20px 0 rgba(73, 59, 59, 0), 0 10px 20px 0 rgba(0, 0, 0, 0.838);
     border: 3px solid rgba(37, 31, 31, 0.734); 
-
+    animation: upside 3s  infinite;
+    transition: all 1s;
     /* border: 3px solid rgb(205, 10, 98); */
      /* overflow: hidden; */
 }
-    /*
+
+@keyframes upside {
+    0%{
     
-    padding: 4%;
-}
+      top: 68%;
+    
+    }
+    50%{
+       
+       top: 65%;
+     }
+    100%{
+
+        top: 68%;
+    }
+    
+    
+ }    /*
+    
+  
 .right_text h3{
     font-size: 4rem;
     height: 50%;

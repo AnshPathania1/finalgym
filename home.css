@@ -19,7 +19,8 @@
    width: 100%;
    height: 12%;
    overflow: hidden;
-   background-color: rgb(38, 72, 86)   ;
+   /* background-color: rgb(38, 72, 86)   ; */
+   background-color: #313944e2;
    border-bottom: 2px solid black;
    display: flex;
    align-items: center;
@@ -65,7 +66,8 @@
 }
 .logo{
    width: 6%;
-   background-color: rgba(37, 31, 31, 0.734) ;
+   /* background-color: rgba(37, 31, 31, 0.734) ; */
+   background-color: rgba(240, 248, 255, 0.314);
    border-radius: 50%;
    background-size: cover;
    margin: 0%;
@@ -111,7 +113,8 @@ top: 0%;
 left: 0%;
 width: 100%;
 height: 100%;
-   background-color: rgba(37, 82, 101, 0.678);
+   /* background-color: rgba(37, 82, 101, 0.678); */
+   background-color: #313944b1;
 }
 
 .sub_container1{

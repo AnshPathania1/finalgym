@@ -12,7 +12,8 @@
     gap: 1px;
     height: 100%;
     width: 100%;
-    background-color: rgba(38, 72, 86);
+    /* background-color: rgba(38, 72, 86); */
+    background-color: #313944;
  }
  .content_header{
     height: 30%;
@@ -57,7 +58,8 @@
     
  }
  .content_logo:hover{
-    background-color:rgb(38, 72, 86) ;
+    /* background-color:rgb(38, 72, 86) ; */
+    background-color: #31394493;
     transition: ease-in 0.2s;
     animation: card 0.2s forwards;
     color: white;
@@ -93,7 +95,7 @@
     object-fit: cover;
     background-color: #ebe8e6d1;
     border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(73, 59, 59, 0.51), 0 6px 20px 0 rgba(0, 0, 0, 0.838);
+    box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.218), 0 6px 20px 0 rgba(62, 59, 59, 0.377);
     background-position: center;
   
  }
