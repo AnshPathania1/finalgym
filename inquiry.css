@@ -87,13 +87,14 @@
 .inquiry_left{
     height: 100%;
     width: 50%;
-    background-color: lightcyan;
+    /* background-color: #FFA07A ; */
     position: relative;
-    padding: 6% 5% 2% 5%;
+    padding: 6% 5% 2% 8%;
 }
 .form-box{ 
     height: 100%;
-    width: 100%;
+    width: 80%;
+    background-color: rgba(231, 238, 245, 0.884);
     border: 3px solid red;
 }
 .form-box h3{
@@ -123,11 +124,15 @@
     height: 70%;
     width: 80%;
     /* border: 1px solid black; */
-    border-radius: 5%;
+    border-radius: 16px;
     padding: 3%;
     margin-left: 6%;
     margin-top: 3%;
-    /* outline: none; */
+    /* background-color: rgba(106, 110, 110, 0.675); */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    outline: none;
+    color: #666;
     /* position: absolute;
     top: 50%;
     left: 50%;
@@ -137,16 +142,28 @@
     /* height: %; */
     width: 100%;
     /* display: flex; */
-    /* margin-left: 2%; */
+    margin-top: 2%;
     /* align-items: center; */
     /* justify-content: center; */
     /* padding: 2%; */
-    border: 3px solid blueviolet;
+    /* border: 3px solid blueviolet; */
 }
 #btn input{
-    padding: 6%;
+    padding: 3% 12%;
+    margin-left: 7%;
+    font-size: 1rem;
 }
 .demo_page{
     height: 10%;
-    border: 3px solid rgb(20, 215, 193);
+    margin-top: 5%;
+    text-align: right;
+    font-weight: 900;
+    /* border: 3px solid rgb(20, 215, 193); */
+}
+.demo_page h5{
+    font-size: 0.9em;
+}
+.demo_page h5 a{
+    font-size: 1.2em;
+    text-decoration: none;
 }
