@@ -88,4 +88,30 @@
     height: 100%;
     width: 50%;
     background-color: lightcyan;
+    position: relative;
+    padding: 4%;
+}
+.form-box{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(228, 224, 255);
+    /* position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+}
+
+.form-box h3{
+    padding: 2%;
+    text-align: center;
+    font-size: 3rem;
+
+}
+.box_input{
+    display: flex;
+    /* flex-direction: column; */
+}
+.box_input input{
+
+
 }

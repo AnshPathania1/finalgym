@@ -54,7 +54,7 @@
     animation: about_main_anime 3s linear ;
     animation-timeline: view();
     animation-range: entry 0 cover 40%; 
-    background-color: rgba(231, 238, 245, 0.674);
+    background-color: rgba(231, 238, 245, 0.884);
     
  }
  .content_logo:hover{
@@ -93,7 +93,7 @@
     height: 30%;
     border: 3px solid rgba(73, 59, 59, 0.948);
     object-fit: cover;
-    background-color: #ebe8e6d1;
+    background-color: #ebe8e6f9;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.218), 0 6px 20px 0 rgba(62, 59, 59, 0.377);
     background-position: center;
