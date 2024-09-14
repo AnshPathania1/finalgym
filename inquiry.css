@@ -74,6 +74,8 @@
     font-size: 4rem;
     padding: 2%;
     color: aliceblue;
+    font-family: 'Rubik';
+    font-weight: 400;
     
 }
 .input_field{ 
@@ -122,6 +124,7 @@ padding: 1%;
 .demo_page dl{
     line-height: 3vh;
     font-size: 1.1em;
+    letter-spacing: 0.3px;
 }
 .demo_page h5{
     font-size: 1.2em;
@@ -135,7 +138,7 @@ padding: 1%;
     text-decoration: none;
 } 
 .demo_page h5 a:hover{
-    color: black;
+    color: rgba(111, 111, 210, 0.881);
 }
 
 

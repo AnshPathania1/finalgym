@@ -79,7 +79,6 @@
 
 .video{
    width: 100%;
-   z-index: -3;
 
 }
 /* ******ending of navbar */
@@ -108,7 +107,7 @@
    transform: translate(-50%,-50%);
 }
 .overlay{
-position:absolute;
+position:absolute;  /* header child*/
 top: 0%;
 left: 0%;
 width: 100%;
