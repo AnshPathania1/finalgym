@@ -60,6 +60,7 @@
  .content_logo:hover{
     /* background-color:rgb(38, 72, 86) ; */
     background-color: #31394493;
+   /* background-color: #7fffd4; */
     transition: ease-in 0.2s;
     animation: card 0.2s forwards;
     color: white;

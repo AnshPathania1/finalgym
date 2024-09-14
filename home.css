@@ -172,9 +172,13 @@ text-align: center;
    cursor: pointer;
    transition: ease-out 0.2s;
    border-radius: 12%;
-   background-color: rgba(37, 31, 31, 0.493);
+ 
+   /* background-color: rgba(37, 31, 31, 0.493); */
+   background-color: #7fffd466;
 }
-
+.btn_explore button a:hover{
+   color:black;
+}
 @keyframes aslide {
    100% {
       top:-430px;

@@ -17,6 +17,7 @@
     position: absolute;
     top:2%;
     left: 6%;
+    z-index: -1;
 }
 
 #inquiry{
@@ -118,8 +119,13 @@ padding: 1%;
     color:aquamarine;
     /* border: 3px solid rgb(20, 215, 193); */
 }
+.demo_page dl{
+    line-height: 3vh;
+    font-size: 1.1em;
+}
 .demo_page h5{
-    font-size: 1.12em;
+    font-size: 1.2em;
+    margin-top: 2%;
 
 }
 .demo_page h5 a{
