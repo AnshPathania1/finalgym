@@ -7,6 +7,19 @@
     height: 100%;
     width: 100%;
 }
+
+#form_inquiry{
+   opacity: 0;
+}
+
+#form_demo{
+    opacity: 1;
+    position: absolute;
+    top:0%;
+    /* left: 12%;
+    transform: translate(-50%,-50%); */
+}
+
 #inquiry{
     height: 100%;
     width: 100%;
@@ -41,6 +54,9 @@
     /* background: url(pic/form2.png);
     background-repeat: no-repeat;
     background-size: cover; */
+}
+.box_input{
+    position: relative;
 }
 .inquiry_left{
     height: 100%;
