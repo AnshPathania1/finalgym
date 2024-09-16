@@ -31,7 +31,7 @@ html, body,main{
    letter-spacing: 1px;
 } 
 
-.about_main{
+#membership .about_main{
    height: 70%;
    width: 100%;
    display: flex;
@@ -43,7 +43,7 @@ html, body,main{
 }
 
 
-.content_logo{
+#membership .content_logo{
    width: 100%;
    height: 100%;
    display: flex;
