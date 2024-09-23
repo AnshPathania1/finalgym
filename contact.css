@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+ html, body,main{
+    height: 100%;
+    width: 100%;
+}
+#contactUS{
+   
+    height: 100%;
+    width: 100%;
+    /* background-color: #313944; */
+   
+ }
+.maincontact{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    
+    padding: 6% 4% 2% 4%;
+}
+
+ .contact_info{
+    height: 100%;
+    width: 50%;
+    background-color:aquamarine;
+    position: relative;
+ }
+ .map{
+    height: 100%;
+    width: 50%;
+    background-color:black;
+ }
+ .header_contact {
+    height: 20%;
+    width: 100%;
+    border: 5px solid black;
+    position: relative;
+ }
+ .ContactDetails{
+    height: 80%;
+    width: 100%;
+    border: 4px solid blue;
+    position: relative;
+ }
+ 
