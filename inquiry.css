@@ -80,7 +80,7 @@
 }
 .input_field{ 
     height: 70%;
-    width: 80%;
+    width: 70%;
     /* border: 2px solid black; */
     border-radius: 16px;
     padding: 2%;
@@ -92,20 +92,14 @@
     outline: none;
     font-size: 1em;
     color: black;
+    
+}
+#form_inquiry textarea{
+    resize: none;
 }
 
 
-#btn {
-/* height: %; */
-width: 100%;
-/* display: flex; */
-/* margin-top: %; */
-align-items: center;
-justify-content: center;
-padding: 1%;
-/* border: 3px solid blueviolet; */
-}
-#btn input{ 
+.btn { 
     padding: 3% 12%;
     margin-left: 7%;
     font-size: 1rem;
