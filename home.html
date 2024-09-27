@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>My Fitness</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="about.css">
@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-  <main>
-    <!-- ********* Home section start******* -->
-      <section id="home">    
-         <!-- ********* nav section start******* -->    
+    <main>
+        <!-- ********* Home section start******* -->
+        <section id="home">    
+            <!-- ********* nav section start******* -->    
             <nav id="nav">
                 <div class="navbar">
-                    <ul >
-                      <img class="logo" src="./pic/logo.png" alt="logo" title="my fitness"/>
+                    <ul>
+                        <img class="logo" src="./pic/logo.png" alt="logo" title="my fitness"/>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#inquiry">Inquiry</a></li>
@@ -29,212 +29,198 @@
                         <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
-                  
-              </nav>
-               <!-- ********* nav section end******* -->
-                 <!-- ********* header section start******* -->
-              <header id ="header">
-                <div class="overlay"></div>
-                    <video class="video" src="./pic/bg.mp4" autoplay loop muted title="background video"></video>
-                      <div class="container">
-                        <div class="sub_container1">
-                            <ul >
-                              <li><span>FITNESS</span></li>
-                              <li><span>PASSION</span></li>
-                              <li><span>JOUNERY</span></li>
-                            </ul>
-                          </div>
-                          <div class="text">
-                             <h3> Join a Community Committed to  is Fitness </h3>
-                              <p>we're dedicated to helping you achieve your fitness goals and embark on a journey of transformation.</p>
-                              <div class="btn_explore">
-                                    <button><a href="#about">Explore</a></button>
-                               </div>
-                           </div>
-                      
-                      </div>
-                </header>
-                 <!-- ********* Headere section close*******8** -->
-       </section>
-                <!-- ********* home section close******* -->  
-                 <!-- ********* about section ******* -->    
-              <section id="about">  
-                <!-- ********* Header_about section ******* -->
-                <div class="content_header">
-                  <span>Why Choose Us</span>
-                  <h2>Push Past Your Limit</h2>
-                </div> 
-                <!-- ********* Header_about section close******* -->
-                 <!-- ********* about_main section ******* -->
-                <div class="about_main">
-                  
-                    <div class="content_logo"><img src="./pic/fitness.png" alt="">
-                      <div class="content_text">
-                        <h2>Modern Fitness</h2>
-                       <p>Standard gym equipment includes dumbbells, weight machines, kettlebells, squat racks, and cardio equipment. </p>
-                      </div>
-                    </div>
-                    <div class="content_logo"><img src="./pic/health.png" alt="">
-                      <div class="content_text">
-                        <h2>Healthy nutrition plan</h2>
-                        <p>A healthy nutrition plan is crucial for achieving fitness goals, especially when aiming for muscle gain.</p>
-                      </div>
-                    </div>
-                    <div class="content_logo"><img src="./pic/training.png" alt="">
-                      <div class="content_text">
-                        <h2>Personal training plan</h2>
-                        <p> Personal training plans are highly adaptable and take into account factors such as fitness level, body type, and lifestyle.</p>
-                      </div>
-                    </div>
-                    <div class="content_logo"><img src="./pic/gear.png" alt="">
-                      <div class="content_text">
-                        <h2>Cleanliness and Maintenance </h2>
-                      <p>All areas of the facility and equipment are be cleaned and maintained regularly. </p>
-                      </div>
-                    </div>
-
-
-                </div>
-                <!-- ********* about_main section close******* -->
-              </section>
-              <!-- ********* about section close******* -->
-
-   <!-- ********* inquire section******* -->     
-
-    <section id="inquiry">
-      <div class="overlay_1"></div>
-      <div class="content_main">
-        <div class="inquiry_left">
-          <div class="form-box">
-            <div class="box_input" >
-              <!-- ******** inquiry section****** -->
-              <form action="" id="form_inquiry" >
-                <h3>Get in Touch</h3>
-                <input    class="input_field" type="text" name="first_name" placeholder=" first_name" id="first_name" />
-            <input    class="input_field" type="text" name="last_name" placeholder=" last_name" id="last_name" />
-            <input    class="input_field" type="text" name="Email" placeholder=" Email" id="email"/>
-            <input    class="input_field" type="number" name="Age" placeholder=" Age" id="age" />
-            <textarea    class="input_field" name="inquiry_box" rows="6" cols="20" placeholder="ask a question" id="inquiry_box" draggable="false" ></textarea>
-            <input type="submit" name="submit" value=" Submit" id="btn_inquiry" class="btn"/>
-            <div class="demo_page">
-            </form>
-            <h5>Book a demo <a  onclick="demo()">Click here >>></a></h5>
-            </div>  
-          <!-- ******** demo section****** -->
-          <form action="" id="form_demo">
-            <h3>Book a Demo</h3>
-                <input    class="input_field" type="text" name="first_name" placeholder=" first_name" required />
-                <input    class="input_field" type="text" name="last_name" placeholder=" last_name" required />
-                <input    class="input_field" type="text" name="Email" placeholder=" Email" required />
-                <input    class="input_field" type="number" name="Age" placeholder=" Age" required />
-                <input    class="input_field" type="date" name="date" placeholder=" date_of_joining" required />
-          <input type="submit" name="submit" value=" Submit" id="btn_demo" class="btn"/>
-       
-        <div class="demo_page">
-          <dl>
-            <dt>Note</dt>
-            <dd>Free Trial for 7 Days.</dd>
-            <dd>Date connot be modify</dd>
-        </dl>
-          <h5>back to inquiry <a  onclick="inquiry()">Click here >>></a></h5>
-             <!-- ******** demo section close ****** -->
-      </div> 
-      </form> 
-        </div>
-          </div>
-        </div>
-        <div class="inquiry_right">
-          <div class="right_img">
-          </div>
-        </div>
-      </div>
-    </section>          
-    <section id="membership">
-      <div class="overlay_3"></div>
-      <div class="box-plan">
-        <div class="box1">
-          <div class="overlay_2"></div>
-         <div class="plan-mg"><img src="pic/plan2.jpg" alt=""></div>
-         <div class="plan-content">
-         <h3>Monthly Plan</h3>
-       
-          <ul>
-            <li>unlimited Access</li>
-            <li>Enable all equipment</li>
-            <li>2Hr time limit</li>
-            <li>24/7 Open</li>
-            <button><a href="#">BUY NOW</a></button>
-         </ul>
-         
-  
-         </div>
-        </div>
-        <div class="box2">
-          <div class="overlay_2"></div>
-          <div class="plan-mg"><img src="pic/plan7.jpg" alt=""></div>
-          <div class="plan-content">
-            <h3> Quaterly Plan</h3>
-          
-             <ul>
-               <li>unlimited Access</li>
-               <li>Enable all equipment</li>
-               <li>2Hr time limit</li>
-               <li>24/7 Open</li>
-               <button><a href="#">BUY NOW</a></button>
-            </ul>
+            </nav>
+            <!-- ********* nav section end******* -->
             
-     
-            </div>
-        </div>
-        <div class="box3">
-          <div class="overlay_2"></div>
-          <div class="plan-mg"><img src="pic/plan6.jpg" alt=""></div>
-          <div class="plan-content">
-            <h3>Yearly Plan</h3>
-          
-             <ul>
-               <li>unlimited Access</li>
-               <li>Enable all equipment</li>
-               <li>2Hr time limit</li>
-               <li>24/7 Open</li>
-               <button><a href="#">BUY NOW</a></button>
-            </ul>
-            </div>
-        </div>
-      </div>
-    
-    </section>
+            <!-- ********* header section start******* -->
+            <header id="header">
+                <div class="overlay"></div>
+                <video class="video" src="./pic/bg.mp4" autoplay loop muted title="background video"></video>
+                <div class="container">
+                    <div class="sub_container1">
+                        <ul>
+                            <li><span>FITNESS</span></li>
+                            <li><span>PASSION</span></li>
+                            <li><span>JOURNEY</span></li>
+                        </ul>
+                    </div>
+                    <div class="text">
+                        <h3> Join a Community Committed to Fitness </h3>
+                        <p>We're dedicated to helping you achieve your fitness goals and embark on a journey of transformation.</p>
+                        <div class="btn_explore">
+                            <button><a href="#about">Explore</a></button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ********* header section end******* -->
+        </section>
+        <!-- ********* home section end******* -->  
 
-    <section id="contactUS">
+        <!-- ********* about section start******* -->    
+        <section id="about">  
+            <!-- ********* about header section ******* -->
+            <div class="content_header">
+                <span>Why Choose Us</span>
+                <h2>Push Past Your Limit</h2>
+            </div> 
+            <!-- ********* about header section end******* -->
+
+            <!-- ********* about main section ******* -->
+            <div class="about_main">
+                <div class="content_logo">
+                    <img src="./pic/fitness.png" alt="">
+                    <div class="content_text">
+                        <h2>Modern Fitness</h2>
+                        <p>Standard gym equipment includes dumbbells, weight machines, kettlebells, squat racks, and cardio equipment.</p>
+                    </div>
+                </div>
+                <div class="content_logo">
+                    <img src="./pic/health.png" alt="">
+                    <div class="content_text">
+                        <h2>Healthy Nutrition Plan</h2>
+                        <p>A healthy nutrition plan is crucial for achieving fitness goals, especially when aiming for muscle gain.</p>
+                    </div>
+                </div>
+                <div class="content_logo">
+                    <img src="./pic/training.png" alt="">
+                    <div class="content_text">
+                        <h2>Personal Training Plan</h2>
+                        <p>Personal training plans are highly adaptable and take into account factors such as fitness level, body type, and lifestyle.</p>
+                    </div>
+                </div>
+                <div class="content_logo">
+                    <img src="./pic/gear.png" alt="">
+                    <div class="content_text">
+                        <h2>Cleanliness and Maintenance</h2>
+                        <p>All areas of the facility and equipment are cleaned and maintained regularly.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ********* about main section end******* -->
+        </section>
+        <!-- ********* about section end******* -->
+
+        <!-- ********* inquiry section start******* -->     
+        <section id="inquiry">
+            <div class="overlay_1"></div>
+            <div class="content_main">
+                <div class="inquiry_left">
+                    <div class="form-box">
+                        <div class="box_input">
+                            <!-- ******** inquiry section****** -->
+                            <form action="" id="form_inquiry">
+                                <h3>Get in Touch</h3>
+                                <input class="input_field" type="text" name="first_name" placeholder="first name" id="first_name" />
+                                <input class="input_field" type="text" name="last_name" placeholder="last name" id="last_name" />
+                                <input class="input_field" type="text" name="Email" placeholder="Email" id="email"/>
+                                <input class="input_field" type="number" name="Age" placeholder="Age" id="age" />
+                                <textarea class="input_field" name="inquiry_box" rows="6" cols="20" placeholder="ask a question" id="inquiry_box" draggable="false"></textarea>
+                                <input type="submit" name="submit" value="Submit" id="btn_inquiry" class="btn"/>
+                                <div class="demo_page">
+                                    <h5>Book a demo <a onclick="demo()">Click here >>></a></h5>
+                                </div>  
+                            </form>
+                            <!-- ******** demo section****** -->
+                            <form action="" id="form_demo">
+                                <h3>Book a Demo</h3>
+                                <input class="input_field" type="text" name="first_name" placeholder="first name" id="first_name_demo"  />
+                                <input class="input_field" type="text" name="last_name" placeholder="last name" id="last_name_demo" />
+                                <input class="input_field" type="text" name="Email" placeholder="Email" id="email_demo" />
+                                <input class="input_field" type="number" name="Age" placeholder="Age" id="age_demo" />
+                                <input class="input_field" type="date" name="date" placeholder="date of joining" id="date" />
+                                <input type="submit" name="submit" value="Submit" id="btn_demo" class="btn"/>
+                                <div class="demo_page">
+                                    <dl>
+                                        <dt>Note</dt>
+                                        <dd>Free Trial for 7 Days.</dd>
+                                        <dd>Date cannot be modified.</dd>
+                                    </dl>
+                                    <h5>Back to inquiry <a onclick="inquiry()">Click here >>></a></h5>
+                                </div> 
+                            </form> 
+                            <!-- ******** demo section end ****** -->
+                        </div>
+                    </div>
+                </div>
+                <div class="inquiry_right">
+                    <div class="right_img"></div>
+                </div>
+            </div>
+        </section>          
+        <!-- ********* inquiry section end******* -->
+
+        <!-- ********* membership section start******* -->
+        <section id="membership">
+            <div class="overlay_3"></div>
+            <div class="box-plan">
+                <div class="box1">
+                    <div class="overlay_2"></div>
+                    <div class="plan-mg"><img src="pic/plan2.jpg" alt=""></div>
+                    <div class="plan-content">
+                        <h3>Monthly Plan</h3>
+                        <ul>
+                            <li>Unlimited Access</li>
+                            <li>Enable all equipment</li>
+                            <li>2Hr time limit</li>
+                            <li>24/7 Open</li>
+                            <button><a href="#">BUY NOW</a></button>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="overlay_2"></div>
+                    <div class="plan-mg"><img src="pic/plan7.jpg" alt=""></div>
+                    <div class="plan-content">
+                        <h3>Quarterly Plan</h3>
+                        <ul>
+                            <li>Unlimited Access</li>
+                            <li>Enable all equipment</li>
+                            <li>2Hr time limit</li>
+                            <li>24/7 Open</li>
+                            <button><a href="#">BUY NOW</a></button>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="overlay_2"></div>
+                    <div class="plan-mg"><img src="pic/plan6.jpg" alt=""></div>
+                    <div class="plan-content">
+                        <h3>Yearly Plan</h3>
+                        <ul>
+                          <li>Unlimited Access</li>
+                          <li>Enable all equipment</li>
+                          <li>2Hr time limit</li>
+                          <li>24/7 Open</li>
+                          <button><a href="#">BUY NOW</a></button>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ********* membership section end******* -->
+
+  <!-- ********* contact section start******* -->
+  <section id="contactUS">
       <div class="maincontact">
-        <div class="contact_info">
-          <div class="header_contact"> 
-            <!-- <h1>Contact US</h1> -->
+          <div class="contact_info">
+              <div class="header_contact"></div>
+              <div class="ContactDetails">
+                  <div class="contact1" id="num1"></div>
+                  <div class="contact1"></div>
+                  <div class="contact1"></div>
+                  <div class="contact1"></div>
+              </div>
           </div>
-          <div class="ContactDetails">
-            <div class="contact1 " id="num1"></div>
-            <div class="contact1"></div>
-            <div class="contact1"></div>
-            <div class="contact1"></div>
-          </div>
-
-
-        </div>
-        <div class="map"></div>
+          <div class="map"></div>
       </div>
-    
-
-
-
-    </section>
-    
-    
-  </main>
-         
-
-   
-  
+  </section>
+  <!-- ********* contact section end******* -->
+</main>
 
 <script src="gym.js"></script>
 </body>
 </html>
+
+                            
