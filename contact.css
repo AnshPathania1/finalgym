@@ -45,9 +45,12 @@
     width: 100%;
     border: 5px solid black;
     position: relative;
-    font-size: 4em;
- }
- .ContactDetails{
+    font-size: 4.3em;
+    color:aliceblue;
+    font-family:Vollkorn;font-weight: 300;
+   }
+   .ContactDetails{
+    padding: 4%;
     height: 80%;
     width: 100%;
     border: 4px solid blue;
