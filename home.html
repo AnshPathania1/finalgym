@@ -3,53 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Frijole&family=Goblin+One&family=Kablammo&family=Metal+Mania&family=Nosifer&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Frijole&family=Goblin+One&family=Kablammo&family=Nosifer&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Kablammo&family=Nosifer&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Kablammo&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sigmar+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+
+
+
     <title>My Fitness</title>
     <link rel="stylesheet" href="home.css">
+    <!-- <link rel="stylesheet" href="singup.css"> -->
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="inquiry.css">
     <link rel="stylesheet" href="membership.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="equip.css">
+    <link rel="stylesheet" href="spopsignup.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-    <main>
-        <!-- ********* Home section start******* -->
-        <section id="home">    
-            <!-- ********* nav section start******* -->    
-            <nav id="nav">
-                <div class="navbar">
-                    <ul>
-                        <img class="logo" src="./pic/logo.png" alt="logo" title="my fitness"/>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#inquiry">Inquiry</a></li>
-                        <li><a href="#membership">Membership</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
+     <!-- ********* nav section start******* --> 
+    <nav id="nav">
+        <img class="logo" src="./pic/logo1.png" alt="logo" title="my fitness"/>
+        <div >
+            <ul class="navbar">
+                
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#inquiry">Inquiry</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+               
+            </ul>
+        </div>
+        
+            <span class="material-symbols-outlined" id="account_icon">
+                account_circle
+                </span>
+                <span  class="navbutton" id="nav_signup_btn">login / signup</span>
+        <!-- Account Dropdown -->
+  
+    </nav>
+    <div id="account_dropdown" class="dropdown">
+        <span id="dropdown_row_1">Kindly login</span><br>
+        <span id="dropdown_row_2">No plan activated</span>
+        <span id="logout_button" class="dropdown_row hidden">Logout</span>
+    </div>
+    
+
+
+       
+    <video class="video" src="./pic/videoogym.mp4" autoplay loop muted title="background video"></video>
+    <div class="overlay"></div>
+         
+     <!-- ********* nav section end******* -->
+              <!-- ********* signup pop section start******* -->
+              <div id="signup">
+                <div id="signup_contentbox">
+                    <div >
+                        <span id="register_close_btn">+</span>
+                    </div>
+                    <form action="signup" id="signup_form">
+                        <h1>SIGN UP </h1>
+                        <div class="signup_field">
+                            <img src="pic/user.png" alt="">
+                                <input type="text" id="signup_username_input" name="username" placeholder="username" required>
+                        </div>
+                        <div class="signup_field">
+                            <img src="pic/password.png" alt="">
+                                <input type="password" id="signup_password_input" name="password" placeholder="Password" required>
+                        </div>
+                        <div class="signup_field">
+                            <img src="pic/con_password.png" alt="">
+                                <input type="password" id="signup_conformpassword_input" name="username" placeholder="conform password" required>
+                        </div>
+                        <div >
+                            <input type="submit" name="submit" value="Submit" id="sign_up_btn" class="btn"/>
+                        </div>
+                        <h5>Already have an account? <a onclick="loginn()">login</a></h5>
+
+                    </form>
+                    <form action="login" id="login_form">
+                        <h2>LOGIN </h2>
+                        <div class="signup_field">
+                            <img src="pic/user.png" alt="">
+                                <input type="text" id="login_username_input" name="username" placeholder="username" required>
+                        </div>
+                        <div class="signup_field">
+                            <img src="pic/password.png" alt="">
+                                <input type="password" id="login_password_input" name="password" placeholder="Password" required>
+                        </div>
+                        <div >
+                            <input type="submit" name="submit" value="Submit" id="sign_up_btn" class="btn"/>
+                        </div>
+                        <h5>Create an account? <a onclick="signup()">sign up</a></h5>
+
+                    </form>
+
                 </div>
-            </nav>
-            <!-- ********* nav section end******* -->
-            
+    
+            </div>   
+      <!-- ********* signup pop section end******* -->
+    <main>
+
+
+        <!-- ********* Home section start******* -->
+        <section id="home"> 
+             
             <!-- ********* header section start******* -->
             <header id="header">
-                <div class="overlay"></div>
-                <video class="video" src="./pic/bg.mp4" autoplay loop muted title="background video"></video>
                 <div class="container">
-                    <div class="sub_container1">
-                        <ul>
-                            <li><span>FITNESS</span></li>
-                            <li><span>PASSION</span></li>
-                            <li><span>JOURNEY</span></li>
-                        </ul>
-                    </div>
                     <div class="text">
-                        <h3> Join a Community Committed to Fitness </h3>
-                        <p>We're dedicated to helping you achieve your fitness goals and embark on a journey of transformation.</p>
-                        <div class="btn_explore">
-                            <button><a href="#about">Explore</a></button>
-                        </div>
+                        <h3>POSITIVE ACTIVITY ENHANCE </BR><span class="yellow">POSITIVE ENERGY</span>  </h3>
+                        <a href="#about" class="btn_explore">GET STARTED</a>
                     </div>
                 </div>
             </header>
@@ -57,7 +140,7 @@
         </section>
         <!-- ********* home section end******* -->  
 
-        <!-- ********* about section start******* -->    
+        <!-- ********* about section start*******     -->
         <section id="about">  
             <!-- ********* about header section ******* -->
             <div class="content_header">
@@ -92,18 +175,142 @@
                 <div class="content_logo">
                     <img src="./pic/gear.png" alt="">
                     <div class="content_text">
-                        <h2>Cleanliness and Maintenance</h2>
+                        <h2> Maintenance</h2>
                         <p>All areas of the facility and equipment are cleaned and maintained regularly.</p>
                     </div>
                 </div>
             </div>
             <!-- ********* about main section end******* -->
         </section>
+        <!-- "equipment" start hear -->
+        <section id="equipment">
+
+            <div id="main_equipment">
+                <div class="left">
+                    <div class="text_box">
+                        <img src="pic/handlebar.png" alt="Horizontal bar" /> 
+                   
+                    </div>
+                    <div class="text_box">
+                            <img src="pic/smith.png" alt="">
+                    </div>
+                    <div class="text_box">
+                    
+                        <img src="pic/legpress.png" alt="">
+                    </div>
+                    <div class="text_box">
+                    
+                        <img src="pic/cardio.png" alt="">
+                    </div>
+                    <div class="text_box">
+                        <img src="pic/sover.png" alt="">
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="text_box">
+                    <h3>Horizontal bar<br> knee lifter</h3>
+                        <p> 'CH-64 Commercial Body Weight Chin/DIP/Leg Raise Fitness Equipment
+                        High quality steel tube Q235 with 40 x 80 x 3mm
+                        Pretty TIG welding
+                         Super quality PU leather</p>
+                    </div>
+                    <div class="text_box">
+                        <h3>Smith <br> machine</h3>
+                        <p>Bar is counterbalanced to 4.4 lb for very low starting resistance
+                            Vertical design accommodates most exercise and provides easier set-up
+                            Adjustable bar stops are easy to identify and adjust in small increments for confidence</p>
+                    </div>
+                    <div class="text_box">
+                    <h3 >45 Degree Linear <br> Leg Press </h3>
+                        <p>he leg press, a type of resistance training exercise, is an excellent way to strengthen your legs. It's done by pushing your legs against weights on a leg press machine. Like all strength training exercises, leg presses build muscle, reduce the risk of injury, and counteract age-related muscle loss.</p>
+                    </div>
+                    <div class="text_box">
+                        <h3>Cardio <br> Machine</h3>
+                        <p>Thicker heavy steel frame and smooth quiet belt transfer Heavier flywheel and magnetic resistance system LCD monitor & Pulse sensors & iPad holder Updated comfortable wider seat cushion Transport wheels and anti-skid cage pedal Fully adjustable seat and handlebar fit people approximately 4'9"to 6'5"</p>
+                    </div>
+                    <div class="text_box">
+                        <h3>Sover <br> Machine</h3>
+                        <p>One-handed adjustment makes operation easy. Widely spaced, dual-adjustable pulleys offer exercise variety. Frame Description Standard rubber feet protect base of the frame and prevent the machine from slipping.</p>
+                    </div>
+                </div>
+                
+                
+                <img src="pic/arrow.png" alt="right scroll" id="left_arrow">
+                <img src="pic/arrow.png" alt="left scroll" id="right_arrow">
+               
+            </div>
+ 
+
+
+        </section>
+
+  <!-- ********* equiment section end******* -->
+        <section id="singup_popup">
+            <div id="singup">
+                <div class="photo">
+                    <img src="pic/form.png" alt="fitness_image">
+                </div>
+                <div class="reminder_text">
+                    <p>ONE DAY OR DAY ONE </p>
+                    <h5>Start your training today</h5>
+                   
+                    </div>
+                
+
+                </div>
+            </section>
+
         <!-- ********* about section end******* -->
 
-        <!-- ********* inquiry section start******* -->     
+        <!-- ********* membership section start******* -->
+        <section id="membership">
+            <div class="box-plan">
+                <div class="box">
+                        <h3>Monthly <br>Plan</h3>
+                        <ul>
+                            <li>Limited access to basic gym equipment.</li>
+                            <li>1 free training session.</li>
+                            <li>Access to 1 generic workout plan.</li>
+                            <li>No long-term discounts on renewal.</li>
+                        </ul>
+                        <h2> Rs.1500 </h2>
+                        <a href="google_form.html" class="btn_explore" >BUY NOW</a>
+                </div>
+                <div class="box">
+                   
+                        <h3>Quarterly <br>Plan</h3>
+                        <ul>
+                            <li>Access to all gym equipment.</li>
+                            <li>1 guest pass per quarter.</li>
+                            <li> 2 free training sessions per month</li>
+                            <li>5-10% renewal discount</li>
+                        </ul>
+                        <h2> Rs.6000 </h2>
+                        <a href="google_form.html" class="btn_explore">BUY NOW</a>
+                 
+                </div>
+                <div class="box">
+                    
+                        <h3>Yearly <br>Plan</h3>
+                        <ul>
+                          <li>Enable all equipment,24/7 entry</li>
+                          <li> 5 free training sessions per month.</li>
+                          <li>3 guest passes per year.</li>
+                          <li> Free access to special fitness events</li>
+                        </ul>
+                        <h2> Rs.10000 </h2>
+                        <a href="google_form.html"  class="btn_explore" >BUY NOW</a>
+                
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ********* membership section end******* -->
+   
+        <!-- ********* inquiry section start*******      -->
         <section id="inquiry">
-            <div class="overlay_1"></div>
+            <!-- <div class="overlay_1"></div> -->
             <div class="content_main">
                 <div class="inquiry_left">
                     <div class="form-box">
@@ -118,12 +325,12 @@
                                 <textarea class="input_field" name="inquiry_box" rows="6" cols="20" placeholder="ask a question" id="inquiry_box" draggable="false"></textarea>
                                 <input type="submit" name="submit" value="Submit" id="btn_inquiry" class="btn"/>
                                 <div class="demo_page">
-                                    <h5>Book a demo <a onclick="demo()">Click here >>></a></h5>
+                                    <h5>Go to a  <a onclick="demo()">Trail Form </a></h5>
                                 </div>  
                             </form>
                             <!-- ******** demo section****** -->
                             <form action="" id="form_demo">
-                                <h3>Book a Demo</h3>
+                                <h3>Book a Trail</h3>
                                 <input class="input_field" type="text" name="first_name" placeholder="first name" id="first_name_demo"  />
                                 <input class="input_field" type="text" name="last_name" placeholder="last name" id="last_name_demo" />
                                 <input class="input_field" type="text" name="Email" placeholder="Email" id="email_demo" />
@@ -136,7 +343,7 @@
                                         <dd>Free Trial for 7 Days.</dd>
                                         <dd>Date cannot be modified.</dd>
                                     </dl>
-                                    <h5>Back to inquiry <a onclick="inquiry()">Click here >>></a></h5>
+                                    <h5>Back to  <a onclick="inquiry()">inquiry form</a></h5>
                                 </div> 
                             </form> 
                             <!-- ******** demo section end ****** -->
@@ -150,92 +357,41 @@
         </section>          
         <!-- ********* inquiry section end******* -->
 
-        <!-- ********* membership section start******* -->
-        <section id="membership">
-            <div class="overlay_3"></div>
-            <div class="box-plan">
-                <div class="box1">
-                    <div class="overlay_2"></div>
-                    <div class="plan-mg"><img src="pic/plan2.jpg" alt=""></div>
-                    <div class="plan-content">
-                        <h3>Monthly Plan</h3>
-                        <ul>
-                            <li>Unlimited Access</li>
-                            <li>Enable all equipment</li>
-                            <li>2Hr time limit</li>
-                            <li>24/7 Open</li>
-                            <button><a href="#">BUY NOW</a></button>
-                        </ul>
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="overlay_2"></div>
-                    <div class="plan-mg"><img src="pic/plan7.jpg" alt=""></div>
-                    <div class="plan-content">
-                        <h3>Quarterly Plan</h3>
-                        <ul>
-                            <li>Unlimited Access</li>
-                            <li>Enable all equipment</li>
-                            <li>2Hr time limit</li>
-                            <li>24/7 Open</li>
-                            <button><a href="#">BUY NOW</a></button>
-                        </ul>
-                    </div>
-                </div>
-                <div class="box3">
-                    <div class="overlay_2"></div>
-                    <div class="plan-mg"><img src="pic/plan6.jpg" alt=""></div>
-                    <div class="plan-content">
-                        <h3>Yearly Plan</h3>
-                        <ul>
-                          <li>Unlimited Access</li>
-                          <li>Enable all equipment</li>
-                          <li>2Hr time limit</li>
-                          <li>24/7 Open</li>
-                          <button><a href="#">BUY NOW</a></button>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-  <!-- ********* membership section end******* -->
+        <section id="footer">
+            <div id="left_footer" class="footer_box">
+                <h2>Sitemap</h2>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#membership">Membership</a>
+                <a href="#inquiry">Inquiry</a>
+                <a href="#footer">Contact Us</a>
+            </div>
+            <div id="middle_footer" class="footer_box">
+                <h1>My Fitness Club</h1>
+                <p>No 75, Vardhaman Market, 1st Floor, Shop No 106, above Front Street Cake Shop, opp. Andhra bank, Sector 17, Vashi, Navi Mumbai, Maharashtra </p>
+             <div class="midle_flex"> <img src="pic/call_icon.png" alt="">
+                <p>087796 72100 </p>
+            </div>
+               
+            <div class="midle_flex"> <img src="pic/gmail_icon.png" alt="">
+                <p> Myfitnessclub@gmail.com</p>
+            </div>
+             
+             
 
-  <!-- ********* contact section start******* -->
-  <section id="contactUS">
-    <!-- <img src="pic/contact3.jpg" alt="contact Us" class="contact-img"> -->
-      <div class="maincontact">
-          <div class="contact_info">
-              <div class="header_contact">
-                <h1>Contact US</h1>
-              </div>
-              <div class="ContactDetails">
-                  <div class="contact1" >
-                    <h2>Loaction</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                  </div>
-                  <div class="contact2">
-                    <h2>Working hour</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                  </div>
-                  <div class="contact3">
-                    <h2>Phone</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                  </div>
-                  <div class="contact4">
-                    <h2>Email</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="map"></div>
-      </div>
-  </section>
-  <!-- ********* contact section end******* -->
+            </div>
+            <div id="right_footer" class="footer_box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15083.100068288506!2d72.98585435049375!3d19.073626975206174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c149e23e6813%3A0xac7c50d240f1dddc!2sIntense%20Fitness%20Club%20(IFC%20Gym)!5e0!3m2!1sen!2sin!4v1734536258243!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+
 </main>
-
-<script src="gym.js"></script>
+<script src="singup.js"></script>
+<script src="inquiry_gym.js"></script>
+<script src="slider.js"></script>
+<script src="open.js"></script>
 </body>
-</html>
+</html> 
 
                             

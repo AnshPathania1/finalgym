@@ -1,6 +1,7 @@
+
  // form inquire to demo page
-var x = document.getElementById("form_inquiry");
-var y = document.getElementById("form_demo");
+const x = document.getElementById("form_inquiry");
+const y = document.getElementById("form_demo");
 
 function demo() {
     x.style.opacity = 0; // Hide inquiry form

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="google_form.css">
+</head>
+<body>
+<!-- Membership Form Section -->
+<section id="membership-form-section">
+    <a href="home.html" id="back-home-btn">
+        &#x2190; Home
+    </a>
+    <div class="form-container">
+        <div class="form-content">
+            <!-- Left Column: Form Fields -->
+            <div class="form-left">
+                <h1>Membership Plan Registration</h1>
+                <form id="membership-form" action="#" method="post">
+                    <!-- Name Field -->
+                    <div class="form-field">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <!-- Address Field -->
+                    <div class="form-field">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                    </div>
+
+                    <!-- Age Field -->
+                    <div class="form-field">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="1" max="120" placeholder="Enter your age" required>
+                    </div>
+
+                    <!-- Gender Field -->
+                    <div class="form-field">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Select your gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Membership Type Field -->
+                    <div class="form-field">
+                        <label for="membership">Select Membership:</label>
+                        <select id="membership" name="membership" required>
+                            <option value="" disabled selected>Select a membership plan</option>
+                            <option value="monthly">Monthly - ₹1500</option>
+                            <option value="quarterly">Quarterly - ₹6000</option>
+                            <option value="yearly">Yearly - ₹10000</option>
+                        </select>
+                    </div>
+
+                 
+
+                    <!-- Transaction ID Field -->
+                    <div class="form-field">
+                        <label for="transaction-id">Transaction ID:</label>
+                        <input type="text" id="transaction-id" name="transaction-id" placeholder="Enter transaction ID" required>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-field">
+                        <input type="submit" value="Submit" id="submit-btn">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right Column: QR Code -->
+            <div class="form-right">
+                <h2>Scan to Pay</h2>
+                <p>Scan the QR code below to make the payment:</p>
+                <img src="https://via.placeholder.com/200x200.png?text=QR+Code" alt="QR Code" id="qr-code">
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
