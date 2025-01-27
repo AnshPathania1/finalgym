@@ -34,3 +34,4 @@ leftArrow.addEventListener("click", () => {
   currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Decrement index and loop
   updateSlides();
 });
+ 
