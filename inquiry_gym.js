@@ -29,11 +29,13 @@ inquiryForm.addEventListener("submit", (event) => {
         event.preventDefault(); // Stop the default form submission if validation fails
     } else {
         alert("Form submitted successfully!"); // ✅ Show alert before submission
-        // clearFormFields(); // Clear form after successful submission
+        setTimeout(() => {
+            clearFormFields(); // Clear form after successful submission
+        }, 1000); //  Delay clearing the form to ensure data is sent
     }
 });
 
-// Validation function
+// Validation functions
 const ValidInquiry = () => {
     const FirstNameValue = FirstName.value.trim();
     const LastNameValue = LastName.value.trim();
