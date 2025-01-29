@@ -14,10 +14,7 @@ function inquiry(){
     y.style.zIndex = -1;
 }
 
-//show the error message in inquiy
-
-// Selecting form and input elements
-const inquiryForm = document.getElementById('form_inquiry');
+const inquiryForm = document.getElementById("form_inquiry");
 const FirstName = document.getElementById("first_name");
 const LastName = document.getElementById("last_name");
 const email = document.getElementById("email");
@@ -26,12 +23,15 @@ const age = document.getElementById("age");
 const inquiry_box = document.getElementById("inquiry_box");
 const Submit = document.getElementById("btn_inquiry");
 
-// Adding event listener to form submission
-// inquiryForm.addEventListener('submit', (event) => 
-//     {
-//     event.preventDefault(); 
-//     ValidInquiry();
 // });
+inquiryForm.addEventListener("submit", (event) => {
+    if (!ValidInquiry()) {
+        event.preventDefault(); // Stop the default form submission if validation fails
+    } else {
+        alert("Form submitted successfully!"); // ✅ Show alert before submission
+        clearFormFields(); // Clear form after successful submission
+    }
+});
 
 // Validation function
 const ValidInquiry = () => {
@@ -44,26 +44,33 @@ const ValidInquiry = () => {
 
     if (FirstNameValue === "") {
         alert("First Name is required");
+        return false;
     } else if (LastNameValue === '') {
         alert("Last Name is required");
-    }else if (emailValue === "") {
+        return false;
+    } else if (emailValue === "") {
         alert("Email is required");
+        return false;
     } else if (!isValidEmail(emailValue)) {
         alert("Invalid email address");
-    }else if (phoneValue === "") {
-        alert(" mobile number is required");
-    }else if (ageValue === "") {
+        return false;
+    } else if (phoneValue === "") {
+        alert("Mobile number is required");
+        return false;
+    } else if (ageValue === "") {
         alert("Age is required");
-    }else if(ageValue<=18 || ageValue >=70){
-        alert("invalid age ");
-    } 
-    else if (inquiry_boxValue === "") {
+        return false;
+    } else if (ageValue <= 18 || ageValue >= 70) {
+        alert("Invalid age");
+        return false;
+    } else if (inquiry_boxValue === "") {
         alert("Give inquiry content");
+        return false;
     } else {
-        alert("Submitted");
-        clearFormFields(); // Clear form after successful submission
+        return true;
     }
 }
+
 // Clear form fields function
 function clearFormFields() {
     FirstName.value = "";
