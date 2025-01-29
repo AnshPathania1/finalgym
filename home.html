@@ -316,13 +316,14 @@
                     <div class="form-box">
                         <div class="box_input">
                             <!-- ******** inquiry section****** -->
-                            <form action="" id="form_inquiry">
+                            <form action="php_folder/inqury.php" method="POST" id="form_inquiry">
+
                                 <h3>Get in Touch</h3>
                                 <input class="input_field" type="text" name="first_name" placeholder="first name" id="first_name" />
                                 <input class="input_field" type="text" name="last_name" placeholder="last name" id="last_name" />
-                                <input class="input_field" type="text" name="Email" placeholder="Email" id="email"/>
+                                <input class="input_field" type="text" name="email" placeholder="Email" id="email"/>
                                 <input class="input_field" type="text" name="phone" placeholder="mobile number" id="phone"/>
-                                <input class="input_field" type="number" name="Age" placeholder="Age" id="age" />
+                                <input class="input_field" type="number" name="age" placeholder="age" id="age" />
                                 <textarea class="input_field" name="inquiry_box" rows="6" cols="20" placeholder="ask a question" id="inquiry_box" draggable="false"></textarea>
                                 <input type="submit" name="submit" value="Submit" id="btn_inquiry" class="btn"/>
                                 <div class="demo_page">
@@ -352,7 +353,9 @@
                     </div>
                 </div>
                 <div class="inquiry_right">
-                    <div class="right_img"></div>
+                    <div class="right_img">
+                   
+                    </div>
                 </div>
             </div>
         </section>          
@@ -389,7 +392,7 @@
 
 </main>
 <script src="singup.js"></script>
-<script src="inquiry_gym.js"></script>
+<!-- <script src="inquiry_gym.js"></script> -->
 <script src="slider.js"></script>
 <script src="open.js"></script>
 </body>

@@ -27,10 +27,11 @@ const inquiry_box = document.getElementById("inquiry_box");
 const Submit = document.getElementById("btn_inquiry");
 
 // Adding event listener to form submission
-inquiryForm.addEventListener('submit', (event) => {
-    event.preventDefault(); 
-    ValidInquiry();
-});
+// inquiryForm.addEventListener('submit', (event) => 
+//     {
+//     event.preventDefault(); 
+//     ValidInquiry();
+// });
 
 // Validation function
 const ValidInquiry = () => {
