@@ -49,7 +49,7 @@ const signup_conformpassword_input = document.getElementById("signup_conformpass
 const signupForm = document.getElementById('signup_form');
 
 signupForm.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent the default form submission behavior
+    // event.preventDefault(); // Prevent the default form submission behavior
     if( signup_password_input.value != signup_conformpassword_input.value){
         alert('check the password');
     }
@@ -57,7 +57,7 @@ signupForm.addEventListener('submit', (event) => {
         alert('submitted successfully!');
     }
     // Clear the content of all input fields
-    document.getElementById('signup_username_input').value = '';
+    // document.getElementById('signup_username_input').value = '';
     document.getElementById('signup_password_input').value = '';
     document.getElementById('signup_conformpassword_input').value = '';
 
@@ -67,18 +67,18 @@ signupForm.addEventListener('submit', (event) => {
     // Example feedback
 });
 
-const loginForm = document.getElementById('login_form');
+// const loginForm = document.getElementById('login_form');
 
-loginForm.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent the default form submission behavior
+// loginForm.addEventListener('submit', (event) => {
+//     event.preventDefault(); // Prevent the default form submission behavior
 
-    // Clear the content of all input fields
-    document.getElementById('login_username_input').value = '';
-    document.getElementById('login_password_input').value = '';
+//     // Clear the content of all input fields
+//     document.getElementById('login_username_input').value = '';
+//     document.getElementById('login_password_input').value = '';
 
-    // Optionally display a success message or perform other actions
-    alert('submitted successfully!'); // Example feedback
-});
+//     // Optionally display a success message or perform other actions
+//     alert('submitted successfully!'); // Example feedback
+// });
 
 
 
