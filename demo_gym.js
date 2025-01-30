@@ -12,7 +12,7 @@ demoform.addEventListener("submit", (event) => {
     if (!ValidDemo()) {
         event.preventDefault(); // Stop the default form submission if validation fails
     } else {
-        alert("Form submitted successfully!"); // ✅ Show alert before submission
+        // alert("Form submitted successfully!"); // ✅ Show alert before submission
         setTimeout(() => {
             clearFormDemo(); // Clear form after successful submission
         }, 1000); //  Delay clearing the form to ensure data is sent

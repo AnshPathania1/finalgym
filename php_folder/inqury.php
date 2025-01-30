@@ -34,7 +34,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute query and check for success
     if ($conn->query($sql) === TRUE) {
-        echo "Inquiry submitted successfully!";
+        // Redirect to thank you page
+        header('Location: thankyou.html');
+        exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
