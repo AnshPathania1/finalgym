@@ -49,23 +49,32 @@ const signup_conformpassword_input = document.getElementById("signup_conformpass
 const signupForm = document.getElementById('signup_form');
 
 signupForm.addEventListener('submit', (event) => {
+    if(!validPassword()){
+        event.preventDefault();
+    }else{
+        alert('submitted successfully!'); // Example feedback
+    }
+
     // event.preventDefault(); // Prevent the default form submission behavior
-    if( signup_password_input.value != signup_conformpassword_input.value){
-        alert('check the password');
-    }
-    else{ 
-        alert('submitted successfully!');
-    }
+   
     // Clear the content of all input fields
     // document.getElementById('signup_username_input').value = '';
-    document.getElementById('signup_password_input').value = '';
-    document.getElementById('signup_conformpassword_input').value = '';
+    // document.getElementById('signup_password_input').value = '';
+    // document.getElementById('signup_conformpassword_input').value = '';
 
    
     
     // Optionally display a success message or perform other actions
     // Example feedback
-});
+});v
+
+function validPassword(){
+    if( signup_password_input.value != signup_conformpassword_input.value){
+        alert('check the password');
+        return false;
+    }
+   return true;
+}
 
 // const loginForm = document.getElementById('login_form');
 
