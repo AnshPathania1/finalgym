@@ -18,7 +18,7 @@ if ($result->num_rows > 0) {
 }else{
     $sql = "INSERT INTO signup (username, password_) VALUES ('$username', '$hashed_password')";
     if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
+        echo "success";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

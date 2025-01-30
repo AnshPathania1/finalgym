@@ -38,43 +38,55 @@ reg_close.addEventListener("click",()=>{
  
 //validation for checking password 
  
-const signup_password_input = document.getElementById("signup_password_input");
-const signup_conformpassword_input = document.getElementById("signup_conformpassword_input");
+
+// const signup_password_input = document.getElementById("signup_password_input");
+// const signup_conformpassword_input = document.getElementById("signup_conformpassword_input");
+
+
+// // JavaScript to handle form submission and clear input fields
+// const signupForm = document.getElementById('signup_form');
+
+// signupForm.addEventListener('submit', (event) => {
+//     if(!validPassword()){
+//         event.preventDefault();
+//     }else{
+//         alert('submitted successfully!'); // Example feedback
+//     }
+// });v
+
+// function validPassword(){
+//     if( signup_password_input.value != signup_conformpassword_input.value){
+//         alert('check the password');
+//         return false;
+//     }
+//    return true;
+// }
 
 
 
+// FormData = new FormData();
+// FormData.append('userkey', 'username');
+// FormData.append('passkey', 'password_');
+
+// fetch("../php_folder/signup.php", {
+//     method: "POST",
+//     body: FormData
+// }).then(
+//       response => response.text()
+// ).then(data => {
+//     if (data === "success") {
+//         alert("Signup successful! Now login.");
+//         loginn(); // Switch to login form
+//     } else if (data === "exists") {
+//         alert("Username already taken. Choose another.");
+//     } else {
+//         alert("Signup failed! Try again.");
+//     }
+// }).catch(error => console.error("Error:", error));
+
+// this.reset(); // Clear form
 
 
-// JavaScript to handle form submission and clear input fields
-const signupForm = document.getElementById('signup_form');
-
-signupForm.addEventListener('submit', (event) => {
-    if(!validPassword()){
-        event.preventDefault();
-    }else{
-        alert('submitted successfully!'); // Example feedback
-    }
-
-    // event.preventDefault(); // Prevent the default form submission behavior
-   
-    // Clear the content of all input fields
-    // document.getElementById('signup_username_input').value = '';
-    // document.getElementById('signup_password_input').value = '';
-    // document.getElementById('signup_conformpassword_input').value = '';
-
-   
-    
-    // Optionally display a success message or perform other actions
-    // Example feedback
-});v
-
-function validPassword(){
-    if( signup_password_input.value != signup_conformpassword_input.value){
-        alert('check the password');
-        return false;
-    }
-   return true;
-}
 
 // const loginForm = document.getElementById('login_form');
 
@@ -89,8 +101,55 @@ function validPassword(){
 //     alert('submitted successfully!'); // Example feedback
 // });
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    const signupForm = document.getElementById('signup_form');
+    const signup_password_input = document.getElementById("signup_password_input");
+    const signup_conformpassword_input = document.getElementById("signup_conformpassword_input");
 
+    signupForm.addEventListener('submit', (event) => {
+        // Prevent default form submission behavior
+        event.preventDefault();
 
+        // console.log('Form submitted');
+        
+        // Validate passwords
+        if (!validPassword()) {
+            alert('Check the password.');
+            return false;
+        }
 
+        // Create FormData object
+        let formData = new FormData();
+        formData.append('userkey', signupForm.userkey.value);
+        formData.append('passkey', signupForm.passkey.value);
 
+        // // Debugging log to ensure formData is created correctly
+        // console.log('FormData created:', formData);
 
+        // Send the FormData using fetch
+        fetch("php_folder/signup.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log('Response received:', data); // Debugging log for response
+            if (data === "success") {
+                alert("Signup successful! Now login.");
+                loginn(); // Switch to login form
+            } else if (data === "exists") {
+                alert("Username already taken. Choose another.");
+            } else {
+                alert("Signup failed! Try again.");
+            }
+        })
+        .catch(error => console.error("Error:", error));
+
+        // Clear form
+        signupForm.reset(); 
+    });
+
+    function validPassword() {
+        return signup_password_input.value === signup_conformpassword_input.value;
+    }
+});
