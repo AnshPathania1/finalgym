@@ -36,70 +36,6 @@ reg_close.addEventListener("click",()=>{
     
 });
  
-//validation for checking password 
- 
-
-// const signup_password_input = document.getElementById("signup_password_input");
-// const signup_conformpassword_input = document.getElementById("signup_conformpassword_input");
-
-
-// // JavaScript to handle form submission and clear input fields
-// const signupForm = document.getElementById('signup_form');
-
-// signupForm.addEventListener('submit', (event) => {
-//     if(!validPassword()){
-//         event.preventDefault();
-//     }else{
-//         alert('submitted successfully!'); // Example feedback
-//     }
-// });v
-
-// function validPassword(){
-//     if( signup_password_input.value != signup_conformpassword_input.value){
-//         alert('check the password');
-//         return false;
-//     }
-//    return true;
-// }
-
-
-
-// FormData = new FormData();
-// FormData.append('userkey', 'username');
-// FormData.append('passkey', 'password_');
-
-// fetch("../php_folder/signup.php", {
-//     method: "POST",
-//     body: FormData
-// }).then(
-//       response => response.text()
-// ).then(data => {
-//     if (data === "success") {
-//         alert("Signup successful! Now login.");
-//         loginn(); // Switch to login form
-//     } else if (data === "exists") {
-//         alert("Username already taken. Choose another.");
-//     } else {
-//         alert("Signup failed! Try again.");
-//     }
-// }).catch(error => console.error("Error:", error));
-
-// this.reset(); // Clear form
-
-
-
-// const loginForm = document.getElementById('login_form');
-
-// loginForm.addEventListener('submit', (event) => {
-//     event.preventDefault(); // Prevent the default form submission behavior
-
-//     // Clear the content of all input fields
-//     document.getElementById('login_username_input').value = '';
-//     document.getElementById('login_password_input').value = '';
-
-//     // Optionally display a success message or perform other actions
-//     alert('submitted successfully!'); // Example feedback
-// });
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const signupForm = document.getElementById('signup_form');
@@ -153,3 +89,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
         return signup_password_input.value === signup_conformpassword_input.value;
     }
 });
+
+
+
+// const loginForm = document.getElementById('login_form');
+
+// loginForm.addEventListener('submit', (event) => {
+//     event.preventDefault(); // Prevent the default form submission behavior
+
+//     // Clear the content of all input fields
+//     document.getElementById('login_username_input').value = '';
+//     document.getElementById('login_password_input').value = '';
+
+//     // Optionally display a success message or perform other actions
+//     alert('submitted successfully!'); // Example feedback
+// });
