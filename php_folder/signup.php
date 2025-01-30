@@ -9,6 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['userkey'];
     $password = $_POST['passkey'];
     $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+    // echo "<pre>Hashed Password: " . $hashed_password . "</pre>";
     //  Check if username already exists
 $checkUserQuery = "SELECT * FROM signup WHERE username = '$username'";
 $result = $conn->query($checkUserQuery);
