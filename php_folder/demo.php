@@ -84,8 +84,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Execute query and check for success
     if ($conn->query($sql) === TRUE) {
         // Redirect to thank you page
-        header('Location: thankyou.html');
-        exit();
+        // header('Location: thankyou.html');
+        // exit()
+        echo "success";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

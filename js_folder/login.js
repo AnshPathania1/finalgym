@@ -23,7 +23,7 @@ document.getElementById('login_form').addEventListener('submit', function(event)
 
         if (data === "success") {
             alert("Login successful!");
-            loadUser(); // Navbar pe name update hoga
+            // loadUser(); // Navbar pe name update hoga
             document.getElementById("signup").style.display = "none"; // Close modal
         } else if (data === "wrong") {
             alert("Incorrect password. Try again.");

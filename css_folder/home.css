@@ -329,6 +329,8 @@ text-align: center;
    background-color: #00ffb3c7;
    color: black;
 }
+
+
 .dropdown {
    display: none;
    position: fixed;
@@ -350,6 +352,7 @@ text-align: center;
    font-size: 1rem;
    text-align: center;
    cursor: pointer;   
+   text-decoration: none;
 }
 .dropdown span{
    line-height: 27px;
@@ -360,10 +363,5 @@ text-align: center;
    background-color:#FFB200;
    border-radius: 5px;
    padding: 5px 10px;
-}
-
-
-.hidden {
-   /* display: none; */
 }
 

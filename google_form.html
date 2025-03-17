@@ -15,9 +15,9 @@
     <div class="form-container">
         <div class="form-content">
             <!-- Left Column: Form Fields -->
-            <div class="form-left">
+            <div class="form-left" >
                 <h1>Membership Plan Registration</h1>
-                <form id="membership-form" action="#" method="post">
+                <form id="membership-form" action="php_folder/googleform.php" method="POST">
                     <!-- Name Field -->
                     <div class="form-field">
                         <label for="name">Name:</label>
@@ -33,7 +33,12 @@
                     <!-- Age Field -->
                     <div class="form-field">
                         <label for="age">Age:</label>
-                        <input type="number" id="age" name="age" min="1" max="120" placeholder="Enter your age" required>
+                        <input type="number" id="age" name="age"  placeholder="Enter your age" required>
+                    </div>
+                     <!-- Email Field -->
+                     <div class="form-field">
+                        <label for="age">Email:</label>
+                        <input type="text" id="email" name="email"  placeholder="Enter your email" required>
                     </div>
 
                     <!-- Gender Field -->
@@ -52,23 +57,34 @@
                         <label for="membership">Select Membership:</label>
                         <select id="membership" name="membership" required>
                             <option value="" disabled selected>Select a membership plan</option>
-                            <option value="monthly">Monthly - ₹1500</option>
-                            <option value="quarterly">Quarterly - ₹6000</option>
-                            <option value="yearly">Yearly - ₹10000</option>
+                            <option value="monthly">Monthly </option>
+                            <option value="quarterly">Quarterly </option>
+                            <option value="yearly">Yearly</option>
                         </select>
                     </div>
 
-                 
+                  <!-- start date Field -->
+                  <div class="form-field">
+                    <label for="startdate">Start Date</label>
+                    <input type="date" id="startdate" name="startdate" placeholder="Enter Date" required>
+                </div>
+
+                <!-- End date Field --> 
+                 <div class="form-field">
+                    <label for="enddate">End Date</label>
+                    <input type="date" id="enddate" name="enddate" placeholder="Enter Date" required>
+                </div> 
+
 
                     <!-- Transaction ID Field -->
                     <div class="form-field">
                         <label for="transaction-id">Transaction ID:</label>
-                        <input type="text" id="transaction-id" name="transaction-id" placeholder="Enter transaction ID" required>
+                        <input type="text" id="transaction-id" name="transaction_id" placeholder="Enter transaction ID" required>
                     </div>
 
                     <!-- Submit Button -->
                     <div class="form-field">
-                        <input type="submit" value="Submit" id="submit-btn">
+                        <input type="submit" value="Submit" id="submit">
                     </div>
                 </form>
             </div>
@@ -82,5 +98,7 @@
         </div>
     </div>
 </section>
+<script src="google_form.js"></script>
 </body>
+
 </html>

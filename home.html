@@ -61,11 +61,13 @@
         <!-- Account Dropdown -->
   
     </nav>
-    <div id="account_dropdown" class="dropdown">
-        <span id="dropdown_row_1">Kindly login</span><br>
-        <span id="dropdown_row_2">No plan activated</span>
-        <span id="logout_button" class="dropdown_row hidden">Logout</span>
-    </div>
+   <!-- Account Dropdown -->
+   <div id="account_dropdown" class="dropdown">
+    <span id="dropdown_row_1">Kindly login</span><br>
+    <span id="logout_button" class="dropdown_row">Logout</span>
+</div>
+
+
     
 
 
@@ -275,7 +277,7 @@
                             <li>No long-term discounts on renewal.</li>
                         </ul>
                         <h2> Rs.1500 </h2>
-                        <a href="google_form.html" class="btn_explore" >BUY NOW</a>
+                        <a href="#" class="btn_explore buy_link" data-plan="monthly">BUY NOW</a>
                 </div>
                 <div class="box">
                    
@@ -287,7 +289,7 @@
                             <li>5-10% renewal discount</li>
                         </ul>
                         <h2> Rs.6000 </h2>
-                        <a href="google_form.html" class="btn_explore">BUY NOW</a>
+                        <a href="#" class="btn_explore buy_link" data-plan="Quarterly">BUY NOW</a>
                  
                 </div>
                 <div class="box">
@@ -300,7 +302,7 @@
                           <li> Free access to special fitness events</li>
                         </ul>
                         <h2> Rs.10000 </h2>
-                        <a href="google_form.html"  class="btn_explore" >BUY NOW</a>
+                        <a href="#" class="btn_explore buy_link" data-plan="Yearly">BUY NOW</a>
                 
               </div>
           </div>
@@ -319,12 +321,12 @@
                             <form action="php_folder/inqury.php" method="POST" id="form_inquiry">
 
                                 <h3>Get in Touch</h3>
-                                <input class="input_field" type="text" name="first_name" placeholder="first name" id="first_name" />
-                                <input class="input_field" type="text" name="last_name" placeholder="last name" id="last_name" />
-                                <input class="input_field" type="text" name="email" placeholder="Email" id="email"/>
-                                <input class="input_field" type="text" name="phone" placeholder="mobile number" id="phone"/>
-                                <input class="input_field" type="number" name="age" placeholder="age" id="age" />
-                                <textarea class="input_field" name="inquiry_box" rows="3" cols="15" placeholder="ask a question" id="inquiry_box" draggable="false"></textarea>
+                                <input class="input_field" type="text" name="first_name" placeholder="first name" id="firstname" />
+                                <input class="input_field" type="text" name="last_name" placeholder="last name" id="lastname" />
+                                <input class="input_field" type="text" name="email" placeholder="Email" id="Email"/>
+                                <input class="input_field" type="number" name="phone" placeholder="mobile number" id="Phone"/>
+                                <input class="input_field" type="number" name="age" placeholder="age" id="Age" />
+                                <textarea class="input_field" name="inquiry_box" rows="3" cols="15" placeholder="ask a question" id="inquirybox" draggable="false"></textarea>
                                 <input type="submit" name="submit" value="Submit" id="btn_inquiry" class="btn"/>
                                 <div class="demo_page">
                                     <h5>Go to a  <a onclick="demo()">Trail Form </a></h5>
@@ -391,12 +393,50 @@
 
 
 </main>
-<script src="singup.js"></script>
-<script src="login.js"></script>
-<script src="inquiry_gym.js"></script>
-<script src="demo_gym.js"></script>
-<script src="slider.js"></script>
-<script src="open.js"></script>
+<script>document.getElementById("logout_button").addEventListener("click", () => {
+    fetch("php_folder/logout.php", { method: "GET" })
+        .then(response => response.text())
+        .then(data => {
+            if (data.trim() === "logged_out") {
+                // Show a message after logout
+                document.getElementById("account_dropdown").innerHTML = `
+                    <span>You have been logged out.</span>
+                `;
+            }
+        })
+        .catch(error => console.error("Error during logout:", error));
+});
+
+</script>
+<script>
+    document.querySelectorAll(".buy_link").forEach(link => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        const planType = link.getAttribute("data-plan");
+
+        // Check login status using an AJAX request
+        fetch("php_folder/check_login.php")
+            .then(response => response.json())
+            .then(data => {
+                if (data.logged_in) {
+                    // User is logged in, redirect to membership form
+                    window.location.href = `google_form.html?plan=${planType}`;
+                } else {
+                    // User is not logged in, show login pop-up
+                    alert("Please login to continue.");
+                }
+            })
+            .catch(error => console.error("Error checking login status:", error));
+    });
+})
+</script>
+<script src="js_folder/demo_gym.js"></script>
+<script src="js_folder/inquiry_gym.js"></script>
+<script src="js_folder/signup.js"></script>
+<script src="js_folder/login.js"></script>
+<script src="js_folder/get_user.js"></script>
+<script src="js_folder/slider.js"></script>
+<script src="js_folder/inq.js"></script>
 </body>
 </html> 
 
